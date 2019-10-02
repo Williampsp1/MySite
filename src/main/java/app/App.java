@@ -5,9 +5,9 @@ import io.javalin.Javalin;
 /**
  * Hello world!
  */
-public
- class App {
-
+public class App {
+dgdgdf
+dgdgdfdf
     /**
      * Says hello to the world.
      * @param args The arguments of the program.
