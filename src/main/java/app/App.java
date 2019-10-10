@@ -17,7 +17,7 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        
+        sssss
         Javalin.create(config -> {
           //  config.addSinglePageRoot("/", "/vue/Start.html");
             config.addStaticFiles("/vue");
