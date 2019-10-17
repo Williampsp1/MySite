@@ -1,10 +1,9 @@
 package app;
 
-import org.eclipse.jetty.server.Authentication.User;
-import org.eclipse.jetty.util.security.Password;
+
 
 import io.javalin.Javalin;
-import io.javalin.http.Context;
+
 
 
 
@@ -25,20 +24,21 @@ public final class App {
         
        Javalin app = Javalin.create(config -> {
           //  config.addSinglePageRoot("/", "/vue/Start.html");
-            config.addStaticFiles("/vue");
+            config.addStaticFiles("/HTML files");
+            config.addStaticFiles("/Images");
+            
         }).start(7000); 
        
         app.post("/login",  ctx -> {
            // console.log(`tried to login with url params ${req.query.username} and ${req.query.password}`);
           
-            if ((ctx.formParam("uname").equals("ELI")) && (ctx.formParam("psw").equals("iloveyou"))) {
+            if ((ctx.formParam("uname").equals("Will")) && (ctx.formParam("psw").equals("pass"))) {
               ctx.redirect("Part1.html");
             }
             else{
-               String hey = ctx.formParam("uname");
-               String pws = ctx.formParam("psw");
+               
               ctx.redirect("indexPrac.html");
-              System.out.printf("%s,%s",hey ,pws );
+              
              // ctx.html(hey);
               //ctx.html(pws);
             }
