@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>What do you need?</title>
+<style>
+  .Main{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .center{
+      text-align: center;
+  }
+  </style>
+</head>
+  <body>
+    <div class="container-fluid Main bg-dark ">
+        <h1 class = " text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
+    </div>
+
+    <div class="container-fluid center">
+        <h3 class = " p-5 text-black"> Everyones needs are different. Your PC needs to match your lifestyle and work.<br><br>
+            Build your PC to what YOU need.<br> 
+            </h3>
+    </div>
+    
+    <div class="container-fluid center">
+        <h3 class ="p-5 text-black"> No matter what type of power your putting into your build, every PC needs 
+            these required parts.
+        </h3>
+    </div>
+    <div class="container-fluid center ">
+        <h2 class = " p-3 text-danger font-weight-bold "><p id="output"></p></h2>
+    </div>
+
+
+
+
+
+
+
+    <center><a class="btn btn-primary btn-lg font-weight-bold" href="index.html">Next</a></center>
+<script id="myJson" type="application/json" >
+
+    {
+   name : 'title'
+    }
+</script>
+<script type="text/javascript">
+
+        var x = JSON.parse(myJSON);
+       // alert(x.name); //Foo
+        
+
+
+
+    document.getElementById('output').innerHTML = x.name;
+        
+       
+        
+
+    </script>
+<script>
+  
+  
+</script>
+
+    </html
