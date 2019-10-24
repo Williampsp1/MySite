@@ -51,35 +51,16 @@
     </div>
 
     
-          <button onclick="changeWord()">Try it</button>
 <p id="ouput"></p>
-   
+
 
     
 
 
 
     <center><a class="btn btn-primary btn-lg font-weight-bold" href="Prices.html">Next</a></center>
-<script id="myJson" type="application/json" >
 
-    {
-   name : 'title'
-    }
-</script>
-<script type="text/javascript">
-
-        var x = JSON.parse(myJSON);
-       // alert(x.name); //Foo
-        
-
-
-
-    document.getElementById('output').innerHTML = x.name;
-        
-       
-        
-
-    </script>
+    
 <script>
   var words = ["word", "words", "wordz"];
   function changeWord() { 
@@ -87,13 +68,10 @@
   //Get the P element and set content
   document.getElementById("output").innerHTML=words[index];
 }
+</script>
+<script>
   
 </script>
-<script lang="javascript">
-   function displayObject(){
-     var javascriptVar="${message}";
-     alert(javascriptVar);
-   }
-</script>
+
 
     </html
