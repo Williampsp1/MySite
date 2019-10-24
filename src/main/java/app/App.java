@@ -1,9 +1,16 @@
 package app;
 
+import java.io.File;
 import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import io.javalin.Javalin;
@@ -11,7 +18,7 @@ import io.javalin.Javalin;
 /**
  * Hello world!
  */
-public final class App {
+public final class App extends HttpServlet{
 
   private App() {
   }
@@ -23,7 +30,7 @@ public final class App {
    */
   static String title;
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args)  throws IOException {
 
     Javalin app = Javalin.create(config -> {
       // config.addSinglePageRoot("/", "/vue/Start.html");
@@ -50,14 +57,33 @@ public final class App {
     
     Document document = Jsoup.connect(url).get();
    Elements question = document.select("#priceblock_ourprice");
-System.out.println("Price is " + question.html());
+    String price = ("Price is " + question.html());
 
+System.out.println(new File(".").getAbsoluteFile());
+
+    File input = new File("src/main/resources/HTML files/Prices.html");
+   /*  Document doc = Jsoup.parse(input, "UTF-8", "http://example.com/");
+    
+    org.jsoup.nodes.Element div = doc.select("div").first(); // <div></div>
+    div.html("<p>lorem ipsum</p>"); // <div><p>lorem ipsum</p></div>
+div.prepend("<p>First</p>");
+div.append("<p>Last</p>");
+// now: <div><p>First</p><p>lorem ipsum</p><p>Last</p></div>
+
+org.jsoup.nodes.Element span = doc.select("span").first(); // <span>One</span>
+span.wrap("<li><a href='http://example.com/'></a></li>");*/
+// now: <li><a href="http://example.com"><span>One</span></a></li>
    // title = document.title();
   //  System.out.println(spanElement.text());
-    
-    app.ws("/websocket/:path", ws -> {
-      ws.onConnect(ctx -> 
-      ctx.send(title));
+ 
+  Document doc = Jsoup.parse(input,"utf-8");
+Element p = doc.select("div").first();
+p.text("My Example Text");
+
+    app.ws("/websocket/:path",ws -> {
+      ws.onConnect(ctx -> {
+        ctx.send(price);
+      });
     });
    // window.location ="PC needs.html" + title;
      
@@ -66,9 +92,16 @@ System.out.println("Price is " + question.html());
 
 		
     }
-    public String getString(){
-       return title;
-     }
-        
-}
+  
+
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String message = "Hello World";
+        request.setAttribute("message", message); // This will be available as ${message}
+        request.getRequestDispatcher("/PC needs.html").forward(request, response);
+    
+
+    }
+  }
 

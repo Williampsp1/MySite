@@ -30,7 +30,7 @@
     }
   </style>
 </head>
-  <body>
+  <body  onload="displayObject()">
     <div class="container-fluid Main bg-dark ">
         <h1 class = " text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
     </div>
@@ -47,49 +47,19 @@
         </h3>
     </div>
     <div class="container-fluid center ">
-        <h2 class = " p-3 text-danger font-weight-bold "><p id="output"></p></h2>
+        <h2 class = " p-3 text-danger font-weight-bold "><p id="output"> </p></h2>
     </div>
 
-    <div class="container-grid-fluid ">
-    <div class="row justify-content-center">
-      <div class = "col-sm-3">
-        <div class="  cen font-weight-bold ">
-            <h3>Fans</h3>
-            <img src="CPU.jpg" class="rounded img-fluid img-thumbnail" alt="Fans">
-            
-          </div>
-        </div>
-      <div class ="col-sm-3">
-          <div class="  cen font-weight-bold ">
-              <h3>Fans</h3>
-              <img src="Fans.jpg" class="rounded img-fluid img-thumbnail" alt="Fans">
-              
-            </div>
-      </div>
-      <div class ="col-sm-3">
-          <div class="  cen font-weight-bold ">
-              <h3>Fans</h3>
-              <img src="Cables Pc.jpg" class="rounded img-fluid img-thumbnail" alt="Fans">
-              
-            </div>
-      </div>
-    </div>
-    </div>
-
-    <style>
-        .cen {
-          display: inline-block;
-          text-align: center;
-        }
     
-        .cen>img {
-          display: block;
-        }
-      </style>
+          <button onclick="changeWord()">Try it</button>
+<p id="ouput"></p>
+   
+
+    
 
 
 
-    <center><a class="btn btn-primary btn-lg font-weight-bold" href="index.html">Next</a></center>
+    <center><a class="btn btn-primary btn-lg font-weight-bold" href="Prices.html">Next</a></center>
 <script id="myJson" type="application/json" >
 
     {
@@ -111,8 +81,19 @@
 
     </script>
 <script>
+  var words = ["word", "words", "wordz"];
+  function changeWord() { 
+  var index = Math.floor(Math.random() * words.length);
+  //Get the P element and set content
+  document.getElementById("output").innerHTML=words[index];
+}
   
-  
+</script>
+<script lang="javascript">
+   function displayObject(){
+     var javascriptVar="${message}";
+     alert(javascriptVar);
+   }
 </script>
 
     </html
