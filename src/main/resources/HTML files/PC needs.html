@@ -11,6 +11,7 @@
 <style>
   .Main{
     text-align: center;
+    position: relative;
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -28,21 +29,25 @@
       background-size: cover;
 
     }
+    #btnTopleft
+     {position:absolute; top:0px; left:20px;}
   </style>
 </head>
-  <body  onload="displayObject()">
-    <div class="container-fluid Main bg-dark ">
-        <h1 class = " text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
+  <body >
+    
+    <div class="container-fluid  bg-dark ">
+     <a class=" btn btn-primary btn-lg font-weight-bold btnTopLeft" href="index.html">Home</a>
+        <h1 class = " Main text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
     </div>
 
     <div class="container-fluid center">
         <h3 class = " p-5 text-black"> Everyones needs are different. Your PC needs to match your lifestyle and work.<br><br>
-            Build your PC to what YOU need.<br> 
+            Build your PC to what YOU need. 
             </h3>
     </div>
     
     <div class="container-fluid center">
-        <h3 class ="p-5 text-black"> No matter what type of power your putting into your build, every PC needs 
+        <h3 class ="p-3 text-black"> No matter what type of power your putting into your build, every PC needs 
             these required parts.
         </h3>
     </div>
@@ -51,27 +56,31 @@
     </div>
 
     
-<p id="ouput"></p>
+
 
 
     
 
 
 
-    <center><a class="btn btn-primary btn-lg font-weight-bold" href="Prices.html">Next</a></center>
+    <center><a class="btn btn-primary btn-lg font-weight-bold" href="CPU Install.html">Next</a></center>
 
     
 <script>
-  var words = ["word", "words", "wordz"];
-  function changeWord() { 
-  var index = Math.floor(Math.random() * words.length);
-  //Get the P element and set content
-  document.getElementById("output").innerHTML=words[index];
-}
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("output").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/ajax", true);
+  xhttp.send();
 </script>
-<script>
+</script>
+
   
-</script>
+
 
 
     </html
