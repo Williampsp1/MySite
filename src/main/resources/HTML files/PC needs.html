@@ -11,14 +11,23 @@
 <style>
   .Main{
     text-align: center;
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    
+    padding-top: 16px;
+    padding-bottom: 94px;
   }
   .center{
       text-align: center;
   }
-  
+  div.content{
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      zoom: 90%; 
+      -moz-transform: scale(3); 
+      -moz-transform-origin: 0 0
+  }
     .img-fluid {
       position: relative;
       float: left;
@@ -29,57 +38,183 @@
       background-size: cover;
 
     }
-    #btnTopleft
-     {position:absolute; top:0px; left:20px;}
+    .cen {
+      display: inline-block;
+      text-align: center;
+    }
+    .cen>.list-group {
+      display: block;
+    }
   </style>
 </head>
-  <body >
-    
-    <div class="container-fluid  bg-dark ">
-     <a class=" btn btn-primary btn-lg font-weight-bold btnTopLeft" href="index.html">Home</a>
-        <h1 class = " Main text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
+  <body>
+    <div class = content>
+    <div class="container-fluid  bg-dark">
+     <a class=" btn btn-primary btn font-weight-bold btnTpLeft" href="index.html">Home</a>
+     <h1 class = " Main text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
     </div>
 
-    <div class="container-fluid center">
-        <h3 class = " p-5 text-black"> Everyones needs are different. Your PC needs to match your lifestyle and work.<br><br>
+    <div class="container-fluid center ">
+        <h3 class = " p-4 text-black"> Everyones needs are different. Your PC needs to match your lifestyle and work.<br><br>
             Build your PC to what YOU need. 
             </h3>
     </div>
     
-    <div class="container-fluid center">
-        <h3 class ="p-3 text-black"> No matter what type of power your putting into your build, every PC needs 
+    <div class="container-fluid center border-bottom border-dark border-top">
+        <h5 class ="p-3 mb-1 text-black"> No matter what type of power you're putting into your build, every PC needs 
             these required parts.
-        </h3>
+        </h5>
     </div>
-    <div class="container-fluid center ">
-        <h2 class = " p-3 text-danger font-weight-bold "><p id="output"> </p></h2>
-    </div>
-
+    <br>
+   
+<style>
+  .list-group{
+    display: inline-block;
     
 
+  }
+</style>
+<div class="container">
+    <div class="d-flex justify-content-center ">
+      <div class="list-group ">
+        <a href ="https://www.amazon.com/s?k=cpu&i=electronics&ref=nb_sb_noss"class= " list-group-item m-1 bg-dark border-dark flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="text-white mb-1">CPU</h5>
+          </div>
+          <p class="mb-1 text-white">Brain of the computer.</p>
+          <small class="text-muted ">Intel or AMD</small>
+        </a>
+        <a href = "https://www.amazon.com/s?k=motherboard&ref=nb_sb_noss_2" class=" list-group-item m-1 bg-dark flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class=" mb-1 text-white">Motherboard</h5>
+          </div>
+          <p class="mb-1 text-white">Connects everything together.</p>
+          <small class="text-muted">Must be compatible with CPU and case size.</small>
+        </a>
+        <a href = "https://www.amazon.com/s?k=ram&ref=nb_sb_noss_2" class="list-group-item m-1 bg-dark flex-column align-items-start">
+          <div class=" d-flex w-100 justify-content-between">
+            <h5 class="mb-1 text-white">RAM</h5>
+          </div>
+          <p class="mb-1 text-white">Computer Memory.</p>
+          <small class="text-muted">Must be compatible with motherboard.</small>
+        </a>
+        <a href ="https://www.amazon.com/s?k=pc+storage&crid=HIZZY02ULVK5&sprefix=PC+sto%2Caps%2C164&ref=nb_sb_ss_i_1_6" class=" list-group-item m-1 bg-dark flex-column align-items-start">
+            <div class=" d-flex w-100 justify-content-between">
+              <h5 class="mb-1 text-white">Storage</h5>
+            </div>
+            <p class="mb-1 text-white">Where all your content is stored.</p>
+            <small class="text-muted">SSD or Hard Drive.</small>
+          </a>
+      </div>
+          <div class="list-group">
+          <a href = "https://www.amazon.com/s?k=graphics+card&ref=nb_sb_noss_1" class=" list-group-item m-1 bg-dark flex-column align-items-start">
+              <div class=" d-flex w-100 justify-content-between">
+                <h5 class="mb-1 text-white">GPU</h5>
+              </div>
+              <p class="mb-1 text-white">Process images,videos and games.</p>
+              <small class="text-muted">Check for card length.</small>
+            </a>
+            <a href = "https://www.amazon.com/s?k=PC+case&ref=nb_sb_noss_2" class=" list-group-item m-1 bg-dark flex-column align-items-start">
+                <div class=" d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 text-white">Case</h5>
+                </div>
+                <p class="mb-1 text-white">Where all the parts go into.</p>
+                <small class="text-muted">ATX or mini-ATX.</small>
+              </a>
+              <a href = "https://www.amazon.com/s?k=power+supply&ref=nb_sb_noss_2" class=" list-group-item  m-1 bg-dark flex-column align-items-start">
+                  <div class=" d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 text-white">Power Supply</h5>
+                  </div>
+                  <p class="mb-1 text-white">Gives power to the computer.</p>
+                  <small class="text-muted">Check for minimum power for your system.</small>
+                </a>
+                <a href = "https://www.amazon.com/s?k=PC+fans&ref=nb_sb_noss_2" class=" list-group-item  m-1 bg-dark flex-column align-items-start">
+                <div class=" d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 text-white">Fans</h5>
+                </div>
+                <p class="mb-1 text-white">Cools the PC.</p>
+                <small class="text-muted">Configure inside the case for proper cooling.</small>
+              </a>
+          </div>
+      </div>
+</div>
+    <br>
+      <div class="container-fluid border-dark border-top border-bottom center p-3 mb-1">
+                <h4 class = "">These are some recommended builds to help you get started!</h4>
+                <h6 class="text-muted"> From Beginner to Advanced, find the right fit for you. </h6>
+              </div>
+          
+      
+      
+      <br>
+<br>
+<br>
 
-
+<div class="container center">
+    <div class="left">
+      <div class="list-group  list-group-flush ">
+        <h5 class=" text-success">Beginner</h5>
+            <h7 class="text-muted ">Perfect for:<br>Normal computer usage and<br>daily tasks</h7>
+          <li class="list-group-item ">CPU: AMD Ryzen 5 2600</li>
+          <li class="list-group-item">GPU: XFX RX 570 </li>
+          <li class="list-group-item">RAM: Crucial 8GB (4x2)</li>
+          <li class="list-group-item">Motherboard: GIGABYTE B450 AORUS Elite</li>
+          <li class="list-group-item">Storage: WD Blue 500GB SSD </li>
+          <li class="list-group-item">Power Supply: EVGA 500W</li>
+          <li class="list-group-item">Case: DeepCool MATREXX 55 </li>
+        </div>
+      </div>
+ 
+    <div class="left">
+        <div class="list-group list-group-flush ">
+            <h5 class="purp">Intermediate</h5>
+              <h7 class="text-muted">Perfect for:<br>Mid level gaming and<br>multitasking</h7>
+          <li class=" list-group-item ">CPU: Crucial 8Gb (4x2) </li>
+          <li class="list-group-item">Motherboard: </li>
+          <li class="list-group-item">RAM</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          
+          </div>
+      </div>
     
+   <div class="left">
+        <div class="list-group list-group-flush ">
+            <h5 class=" text-danger">Advanced</h5>
+              <h7 class="text-muted">Perfect for:<br>Serious gamers, Video rendering,<br>developing and much more</h7>
+          <li class=" list-group-item ">CPU:   </li>
+          <li class=" list-group-item">Motherboard:</li>
+          <li class=" list-group-item">RAM</li>
+          <li class=" list-group-item">Porta ac consectetur ac</li>
+          <li class=" list-group-item">Vestibulum at eros</li>
+          </div>
+      </div>
+      <br style="clear: left;" />
+  </div>
+      <style>
+      .purp {
+ color: purple; 
+  }
+      </style>
 
 
+  <br>
+  <br>
 
-    <center><a class="btn btn-primary btn-lg font-weight-bold" href="CPU Install.html">Next</a></center>
+  <style>
+  .left{
+  float:left; width:33.2%;}
 
-    
-<script>
+  </style>
 
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("output").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "/ajax", true);
-  xhttp.send();
-</script>
-</script>
-
+  <div>
   
+    <center><a class="btn btn-primary btn-lg font-weight-bold" href="CPU Install.html">Next</a></center>
+  </div>
+  
+  </body>
+
+</div>
 
 
 
