@@ -36,11 +36,11 @@ public final class App {
     }).start(7000);
 
      
-    String url = "https://www.amazon.com/Intel-i5-9600K-Desktop-Processor-Unlocked/dp/B07HHLX1R8/ref=sr_1_4?keywords=cpu+i5&qid=1571698422&s=electronics&sr=1-4";
+    String url = "https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
     Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2").timeout(0).ignoreHttpErrors(true).get();
     Elements question = document.select("#priceblock_ourprice");
-    price = ("Price is " + question.html());
-    System.out.print(price);
+    price = ("Amazon Price: " + question.html());
+    
 
     app.get("/ajax", ctx -> {
 
