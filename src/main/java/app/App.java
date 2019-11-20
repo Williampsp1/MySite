@@ -2,6 +2,10 @@ package app;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.Spring;
 
 import org.jsoup.Jsoup;
 import org.jsoup.helper.HttpConnection.Response;
@@ -24,8 +28,38 @@ public final class App {
    * 
    * @param args The arguments of the program.
    */
-  static String title;
-  static String price;
+  
+  private static String CPU = "https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
+  private static String GPU = "https://www.amazon.com/gp/product/B077VX31FZ/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String RAM = "https://www.amazon.com/gp/product/B06XJ5LT72/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
+  private static String MB = " https://www.amazon.com/gp/product/B07GRNSWNR/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1";
+  private static String ST = "https://www.amazon.com/gp/product/B073SBZ8YH/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
+  private static String PS = "https://www.amazon.com/gp/product/B01N3OAFHD/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1";
+  private static String CASE = "https://www.amazon.com/gp/product/B07GVL3CKJ/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&th=1";
+  private static String ICPU = "https://www.amazon.com/gp/product/B07HHLX1R8/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1";
+  private static String ICPUF ="https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String IGPU = "https://www.amazon.com/gp/product/B07MC23VS4/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1";
+  private static String IRAM = "https://www.amazon.com/gp/product/B0134EW7G8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
+  private static String IMB = "https://www.amazon.com/gp/product/B07CBKQ75V/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&psc=1";
+  private static String IST = "https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String IPS = "https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
+  private static String ICASE = "https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
+  private static String ACPU ="https://www.amazon.com/gp/product/B07HHN6KBZ/ref=ox_sc_act_title_2?smid=A2AJ46Y2CSSO0I&psc=1";
+  private static String ACPUF = "https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String AGPU = "https://www.amazon.com/gp/product/B07GG9L5X1/ref=ox_sc_act_title_8?smid=ATVPDKIKX0DER&psc=1";
+  private static String ARAM = "https://www.amazon.com/gp/product/B01CYILUB8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
+  private static String AMB ="https://www.amazon.com/gp/product/B07J6Z9KJ2/ref=ox_sc_act_title_3?smid=AVCN3MVCVULPH&psc=1";
+  private static String AST = "https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String APS = "https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
+  private static String ACASE ="https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
+  private static Document document;
+  private static Elements question;
+  private static String [] BParts = {CPU,GPU,RAM,MB,ST,PS,CASE};
+  private static String [] IParts = {ICPU,ICPUF,IGPU,IRAM,IMB,IST,IPS,ICASE};
+  private static String [] AParts = {ACPU,ACPUF,AGPU,ARAM,AMB,AST,APS,ACASE};
+  private static String result ="";
+  private static String Iresult ="";
+  private static String Aresult ="";
 
   public static void main(String[] args) throws IOException {
 
@@ -35,28 +69,46 @@ public final class App {
 
     }).start(7000);
 
-     
-    String url = "https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
-    Document document = Jsoup.connect(url).userAgent("Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2").timeout(0).ignoreHttpErrors(true).get();
-    Elements question = document.select("#priceblock_ourprice");
-    price = ("Amazon Price: " + question.html());
+ 
+    for (int i = 0; i < BParts.length;i++){
+      document = Jsoup.connect(BParts[i]).userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36").timeout(0).get();
+      question = document.select("#priceblock_ourprice");
+      result += ("Amazon Price: " + question.html()) + ",";
+      
+    }
     
+    for (int i = 0; i < IParts.length;i++){
+      document = Jsoup.connect(IParts[i]).userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36").timeout(0).get();
+      question = document.select("#priceblock_ourprice");
+      Iresult += ("Amazon Price: " + question.html()) + ",";
+    }
+    
+    
+    for (int i = 0; i < AParts.length;i++){
+      document = Jsoup.connect(AParts[i]).userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36").timeout(0).get();
+      question = document.select("#priceblock_ourprice");
+      Aresult += ("Amazon Price: " + question.html()) + ",";
+    }
 
-    app.get("/ajax", ctx -> {
 
-            ctx.result(price);
+    app.get("/getBeginnerParts", ctx -> {
+
+      ctx.result(result);
+    });
+
+  app.get("/getIntermediateParts", ctx -> {
+    
+    ctx.result(Iresult);
 
     });
 
-/*
-    app.ws("/websocket/:path", ws -> {
-      ws.onConnect(ctx -> {
-        ctx.send(price);
+    app.get("/getAdvancedParts", ctx -> {
+    
+      ctx.result(Aresult);
+  
       });
-    });
-    */
+      
   }
-
 }
 
  

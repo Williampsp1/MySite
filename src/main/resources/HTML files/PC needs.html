@@ -8,12 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>What do you need?</title>
+  
 <style>
   .Main{
     text-align: center;
     
-    padding-top: 16px;
-    padding-bottom: 94px;
+    padding-top: 90px;
+    padding-bottom: 43px;
   }
   .center{
       text-align: center;
@@ -45,14 +46,83 @@
     .cen>.list-group {
       display: block;
     }
+  
+    
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.navbar.navbar .navbar-nav>a:hover {
+  color: grey;
+}
+.navbar.navbar .navbar-nav>a {
+  color: white;
+}
+
+.bg-custom{
+  background-color: rgb(87, 87, 87);
+}
+.scrollmenu {
+  
+  overflow: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; 
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+}
+.purp {
+ color: purple; 
+  }
   </style>
-</head>
+</head >
   <body>
-    <div class = content>
-    <div class="container-fluid  bg-dark">
-     <a class=" btn btn-primary btn font-weight-bold btnTpLeft" href="index.html">Home</a>
-     <h1 class = " Main text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
-    </div>
+    <div class = "content">
+        
+      
+        <nav class="  navbar navbar-expand navbar-dark bg-custom flex-column fixed-top flex-md-row bd-navbar " >
+            <div class="container-fluid justify-content-center">
+                <div class="  scrollmenu navbar-nav ">
+                  
+                    <a class=" nav-item nav-link " href="index.html">Home </a>
+                  
+                  
+                    <a class="nav-item nav-link" href="CPU Install.html">CPU</a>
+                  
+                
+                    <a class="nav-item nav-link" href="MB Install.html">Motherboard</a>
+                  
+                  
+                      <a class="nav-item nav-link" href="Ram Install.html">RAM</a>
+                    
+                 
+                      <a class="nav-item nav-link" href="SSD Install.html">Storage</a>
+                    
+                  
+                      <a class="nav-item nav-link" href="PS Install.html">Power Supply</a>
+                   
+               
+                      <a class="nav-item nav-link" href="GPU Install.html">GPU</a>
+                        
+                 
+                      <a class="nav-item nav-link" href="Cables Install.html">Cables</a>
+                   
+                  
+                      <a class="nav-item nav-link" href="Case Install.html">Case</a>
+                  
+                
+              </div>
+            </div>
+              </nav>
+ 
+        <div class="container-fluid Main bg-dark">
+     
+            <h1 class = "  text-white font-weight-bold"> Part 1: <br> What do you need? </h1>
+           </div>
+    
 
     <div class="container-fluid center ">
         <h3 class = " p-4 text-black"> Everyones needs are different. Your PC needs to match your lifestyle and work.<br><br>
@@ -160,15 +230,15 @@
           <div class="list-group  list-group-flush ">
               <h3 class=" text-success ">Beginner</h3>
                 <h5 class="mb-3">$600 Build</h5>
-                  <h6 class="text-muted mb-3 ">Perfect for:<br>Normal computer usage,<br>daily tasks and gaming</h6>
+                  <h6 class="text-muted mb-3 ">Perfect for:<br>Normal computer usage,<br>daily tasks and entry level gaming</h6>
                   
-                <a href="https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1" target="_blank" class = " list-group-item-action list-group-item text-black ">CPU: AMD Ryzen 5 2600 <h6 class="text-muted" id="output"></h6></a>
-                <a href="https://www.amazon.com/gp/product/B077VX31FZ/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1"target="_blank" class="list-group-item list-group-item-action">GPU: XFX RX 570 </a>
-                <a href="https://www.amazon.com/gp/product/B06XJ5LT72/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1"target="_blank" class="list-group-item list-group-item-action">RAM: Crucial 8GB (4x2)</a>
-                <a href="https://www.amazon.com/gp/product/B07GRNSWNR/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Motherboard: GIGABYTE B450 AORUS Elite</a>
-                <a href="https://www.amazon.com/gp/product/B073SBZ8YH/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Storage: WD Blue 500GB SSD </a>
-                <a href="https://www.amazon.com/gp/product/B01N3OAFHD/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Power Supply: EVGA 500W</a>
-                <a href="https://www.amazon.com/gp/product/B07GVL3CKJ/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&th=1" target="_blank"class="list-group-item list-group-item-action">Case: DeepCool MATREXX 55 </a>
+                <a href="https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1" target="_blank" class= " list-group-item-action list-group-item ">CPU: AMD Ryzen 5 2600 <h6 class="text-muted small" id="output"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B077VX31FZ/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1"target="_blank" class="list-group-item list-group-item-action">GPU: XFX RX 570 <h6 class="text-muted small" id="output2"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B06XJ5LT72/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1"target="_blank" class="list-group-item list-group-item-action">RAM: Crucial 8GB (4x2) <h6 class="text-muted small" id="output3"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B07GRNSWNR/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Motherboard: GIGABYTE B450 AORUS Elite<h6 class="text-muted small" id="output4"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B073SBZ8YH/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Storage: WD Blue 500GB SSD <h6 class="text-muted small" id="output5"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B01N3OAFHD/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1" target="_blank"class="list-group-item list-group-item-action">Power Supply: EVGA 500W <h6 class="text-muted small" id="output6"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B07GVL3CKJ/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&th=1" target="_blank"class="list-group-item list-group-item-action">Case: DeepCool MATREXX 55 <h6 class="text-muted small" id="output7"></h6></a>
                 <br>
               </div>
         </div>
@@ -178,64 +248,116 @@
            <h3 class="purp">Intermediate</h3>
               <h5 class="mb-3">$1000 Build</h5>
                 <h6 class="text-muted mb-3">Perfect for:<br>Mid level gaming and<br>multitasking</h6>
-                 <li class=" list-group-item ">CPU: Crucial 8Gb (4x2) </li>
-                  <li class="list-group-item">Motherboard: </li>
-                  <li class="list-group-item">RAM</li>
-                  <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-              <br>
+                 <a href="https://www.amazon.com/gp/product/B07HHLX1R8/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1" target="_blank" class=" list-group-item list-group-item-action">CPU: i5-9600K <h6 class="text-muted small" id="outputI"></h6></a>
+                 <a href="https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1" target="_blank" class=" list-group-item list-group-item-action">CPU Cooling: Corsair H60 <h6 class="text-muted small" id="outputI1"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B07MC23VS4/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">GPU: MSI GAMING RTX 2060<h6 class="text-muted small" id="outputI2"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B0134EW7G8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">RAM: Vengeance 16GB (8x2)<h6 class="text-muted small" id="outputI3"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B07CBKQ75V/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Motherboard: MSI GAMING PLUS B360<h6 class="text-muted small" id="outputI4"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Storage: Blue 3D NAND 1TB <h6 class="text-muted small" id="outputI5"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Power Supply: Corsair 640W<h6 class="text-muted small" id="outputI6"></h6></a>
+                  <a href="https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Case: Phanteks Eclipse P400<h6 class="text-muted small" id="outputI7"></h6></a>
+                  <br>
            </div>
           </div>
 
         <div class="col-sm-3 ">
         <div class="list-group list-group-flush ">
             <h3 class=" text-danger">Advanced</h3>
-              <h5 class="mb-3">$1500 Build</h5>
+              <h5 class="mb-3">$1600 Build</h5>
                 <h6 class="text-muted mb-3">Perfect for:<br>Serious gamers, Video rendering,<br>developing and much more</h6>
-          <li class=" list-group-item ">CPU:   </li>
-          <li class=" list-group-item">Motherboard:</li>
-          <li class=" list-group-item">RAM</li>
-          <li class=" list-group-item">Porta ac consectetur ac</li>
-          <li class=" list-group-item">Vestibulum at eros</li>
+                <a href="https://www.amazon.com/gp/product/B07HHN6KBZ/ref=ox_sc_act_title_2?smid=A2AJ46Y2CSSO0I&psc=1" target="_blank" class=" list-group-item list-group-item-action">CPU: i7-9700K <h6 class="text-muted small" id="outputA"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1" target="_blank" class=" list-group-item list-group-item-action">CPU Cooling: Corsair H60 <h6 class="text-muted small" id="outputA1"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B07GG9L5X1/ref=ox_sc_act_title_8?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">GPU: ZOTAC GAMING RTX 2080<h6 class="text-muted small" id="outputA2"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B01CYILUB8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">RAM: Vengeance 32GB (16x2)<h6 class="text-muted small" id="outputA3"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B07J6Z9KJ2/ref=ox_sc_act_title_3?smid=AVCN3MVCVULPH&psc=1" target="_blank" class="list-group-item list-group-item-action">Motherboard: MSI Z360 A PRO<h6 class="text-muted small" id="outputA4"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Storage: Blue 3D NAND 1TB <h6 class="text-muted small" id="outputA5"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Power Supply: Corsair 640W<h6 class="text-muted small" id="outputA6"></h6></a>
+                <a href="https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1" target="_blank" class="list-group-item list-group-item-action">Case: Phanteks Eclipse P400<h6 class="text-muted small" id="outputA7"></h6></a>
+                <br>
           </div>
         </div>
     </div>
     </div>
-      <style>
-      .purp {
- color: purple; 
-  }
-      </style>
-
+      
 
   <br>
   <br>
 
-  <style>
-  .left{
-  float:left; width:33.2%;}
-
-  </style>
 
   <div>
   
     <center><a class="btn btn-primary btn-lg font-weight-bold" href="CPU Install.html">Next</a></center>
   </div>
+  <br>
   
-  </body>
+  
+
+
+
+
+    
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+      
+      function BeginnerPrices() {
+            $.ajax("/getBeginnerParts", {
+                success: function (data) {
+                  var splits = data.split(",");
+                  
+                  $("#output").html(splits[0]);
+                  $("#output2").html(splits[1]);
+                  $("#output3").html(splits[2]);
+                  $("#output4").html(splits[3]);
+                  $("#output5").html(splits[4]);
+                  $("#output6").html(splits[5]);
+                  $("#output7").html(splits[6]);
+            }})}; 
+            
+
+            
+          
+        function IntermediatePrices(){
+          $.ajax("/getIntermediateParts", {
+                success: function (data) {
+                  var splits = data.split(",");
+                  $("#outputI").html(splits[0]);
+                  $("#outputI1").html(splits[1]);
+                  $("#outputI2").html(splits[2]);
+                  $("#outputI3").html(splits[3]);
+                  $("#outputI4").html(splits[4]);
+                  $("#outputI5").html(splits[5]);
+                  $("#outputI6").html(splits[6]);
+                  $("#outputI7").html(splits[7]);
+            }}
+            )};
+          
+          function AdvancedPrices(){
+          $.ajax("/getAdvancedParts", {
+                success: function (data) {
+                  var splits = data.split(",");
+                  $("#outputA").html(splits[0]);
+                  $("#outputA1").html(splits[1]);
+                  $("#outputA2").html(splits[2]);
+                  $("#outputA3").html(splits[3]);
+                  $("#outputA4").html(splits[4]);
+                  $("#outputA5").html(splits[5]);
+                  $("#outputA6").html(splits[6]);
+                  $("#outputA7").html(splits[7]);
+
+            }}
+            )};
+          
+     
+      BeginnerPrices();
+      IntermediatePrices();
+      AdvancedPrices();
+  
+   
+    </script>
 
 </div>
+</body>
 
-<script>
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("output").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "/ajax", true);
-    xhttp.send();
-  </script>
-
-    </html
+    </html>
