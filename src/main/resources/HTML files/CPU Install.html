@@ -1,183 +1,230 @@
-<!doctype html  >
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<title>Motherboard!</title>
+  <title>CPU!</title>
 
-<style>
-  .Main{
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 43px;
-  }
-  .center{
+  <style>
+    .Main {
       text-align: center;
-  }
-  
+      padding-top: 90px;
+      padding-bottom: 43px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
     .img-fluid {
       position: relative;
       float: right;
-      width: 600px;
-      height: 500px;
+      width: 900px;
+      height: 600px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
 
     }
 
-   
+    .cenImg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
 
-    div.content{
-      
+    div.content {
+
       width: 100%;
       height: 100%;
       margin: 0px;
       padding: 0px;
       overflow-x: hidden;
-      zoom: 85%; 
-      -moz-transform: scale(3); 
+      zoom: 70%;
+      -moz-transform: scale(3);
       -moz-transform-origin: 0 0
-  } 
-  
-.navbar.navbar .navbar-nav>a:hover {
-  color: grey;
-}
-.navbar.navbar .navbar-nav>a {
-  color: white;
-}
+    }
 
-.bg-custom{
-  background-color: rgb(87, 87, 87);
-}
-.scrollmenu {
-  
-  overflow: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch; 
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
+    .navbar.navbar .navbar-nav>a:hover {
+      color: grey;
+    }
 
-.scrollmenu a {
-  display: inline-block;
-  text-align: center;
-  padding: 6px;
-  text-decoration: none;
-}
+    .navbar.navbar .navbar-nav>a {
+      color: white;
+    }
+
+    .bg-custom {
+      background-color: rgb(87, 87, 87);
+    }
+
+    .scrollmenu {
+
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .scrollmenu a {
+      display: inline-block;
+      text-align: center;
+      padding: 6px;
+      text-decoration: none;
+    }
+
+    .btn-xlarge {
+      padding: 10px 40px;
+      font-size: 20px; 
+      line-height: normal;
+      -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+              border-radius: 8px;
+  }
   </style>
 </head>
-<body >
-  <div class ="content">
-    <nav class="  navbar navbar-expand navbar-dark bg-custom flex-column fixed-top flex-md-row bd-navbar " >
-        <div class="container-fluid justify-content-center">
-            <div class="  scrollmenu navbar-nav ">
-              
-                <a class=" nav-item nav-link " href="index.html">Home </a>
-              
-              
-                <a class="nav-item nav-link" href="CPU Install.html">CPU</a>
-              
-            
-                <a class="nav-item nav-link" href="MB Install.html">Motherboard</a>
-              
-              
-                  <a class="nav-item nav-link" href="Ram Install.html">RAM</a>
+
+<body>
+  <div class="content">
+    <nav class="  navbar navbar-expand navbar-dark bg-custom flex-column fixed-top flex-md-row bd-navbar ">
+      <div class="container-fluid justify-content-center">
+        <div class="  scrollmenu navbar-nav ">
+
+          <a class=" nav-item nav-link " href="index.html">Home </a>
+
+
+           <a class="nav-item nav-link" href="CPU Install.html">CPU</a>
+          <a class="nav-item nav-link" href="CPU Fan.html">CPU Fan</a>
+          <a class="nav-item nav-link" href="Ram Install.html">RAM</a>
+
+          <a class="nav-item nav-link" href="MB Install.html">Motherboard</a>
+
+
+
+          <a class="nav-item nav-link" href="SSD Install.html">Storage</a>
+
+
+          <a class="nav-item nav-link" href="PS Install.html">Power Supply</a>
+
+
+          <a class="nav-item nav-link" href="GPU Install.html">GPU</a>
+
+
+          <a class="nav-item nav-link" href="Cables Install.html">Cables</a>
+
+
+          <a class="nav-item nav-link" href="Finishing up!.html">Finishing up</a>
+
+
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid Main bg-dark">
+      <h1 class="p-3 text-white font-weight-bold"> Part 2: <br> CPU Installation</h3>
+    </div>
+
+    <div class="container-fluid p-4  center ">
+      <h3 class="text-black "> The first step is to install the CPU onto the Motherboard </h3>
+       <h4 class="text-muted"> Installation will differ depending if you have an AMD or Intel build</h4>
+    </div>
+    <div class="container-fluid center border-bottom border-top border-dark">
+      <h5 class="text-danger p-3 mb-1 ">When handling CPU's make sure to NOT touch the pins on the bottom, always hold
+        it by its sides gently.</h5>
+    </div>
+    
+    <div class="container-fluid mt-4">
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="list-group" id="list-tab" role="tablist">
+                <img src="intel-logo-1.png" style="width:150px;height:120px;" class="cenImg mb-5">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">
+                  <h3 class="center">Part 1</h3>
+                </a>
+                <a class="list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">
+                  <h3 class=" center">Part 2</h3>
+                </a>
+
+                <img src="amd-logo.png" style="width:210px;height:180px;" class="cenImg ">
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                  href="#list-messages" role="tab" aria-controls="messages">
+                  <h3 class="center">Part 1</h3>
+                </a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                  href="#list-settings" role="tab" aria-controls="settings">
+                  <h3 class="center">Part 2</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <h4 class="mt-5"><li>Slide the spring loaded retention arm out and up, then lift
+                    the bracket up leaving the plastic cover in place.</li>
+                    <br><li> Then, gently place your CPU inside the socket, matching the golden triangle
+                    located on the bottom left corner of
+                    the processor, with the triangle on the socket bracket.</li> </h4>
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <h4 class="mt-5"><li>For the next step, you should put the securing bracket back
+                    into its original position so it locks in place underneath the screw, and secure the retention arm
+                    back down.</li>
+                    <br><li>Don't be afraid to add extra pressure to lock it into place as it is
+                    normal.
+                    During this process the protective plastic cover should pop off.</li> </h4>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                  <h4 class="mt-5"><li>There is no bracket here to worry about with AMD.</li>
+                    <br>
+                    <li>Simply lift the retention arm in its raised position.</li></h4>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                  <h4 class="mt-5"><li>Next you should take your processor and match the golden
+                    triangle on the corner of the processor with the triangle on the socket.</li><br><li>Once the pins on the bottom of the processor lineup with the holes on the
+                    socket, drop it into place gently.</li>
+                    <br><li>Give it a little nudge to make sure it’s secure, then lower the
+                    retention arm back down and lock it into place.</li></h4>
+                </div>
                 
-             
-                  <a class="nav-item nav-link" href="SSD Install.html">Storage</a>
-                
+              </div>
               
-                  <a class="nav-item nav-link" href="PS Install.html">Power Supply</a>
-               
-           
-                  <a class="nav-item nav-link" href="GPU Install.html">GPU</a>
-                    
-             
-                  <a class="nav-item nav-link" href="Cables Install.html">Cables</a>
-               
-              
-                  <a class="nav-item nav-link" href="Case Install.html">Case</a>
-              
+            </div>
             
           </div>
+          <br>
         </div>
-          </nav>
+        
+        <div class="col">
+          <img src="CPU Install.jpg" class="rounded img-fluid">
+        </div>
+      
 
-    <div class ="container-fluid Main bg-dark">
-        <h1 class = "text-white font-weight-bold"> Part 2: <br> CPU Installation</h3>
-    </div>
-
-    <div class = "container-fluid center border-bottom border-dark">
-        <h3 class = "p-5 text-black "> Hey man</h3>
-    </div>
-<br>
-    <div class ="container-fluid ">
-  
-<div class="row">
-  <div class="col">
-  <div class="row">
-      <div class="col-4">
-         <div class="list-group" id="myScrollspy">
-            <a class="list-group-item" href="#content-javascript">Javascript</a>
-            <a class="list-group-item" href="#content-css">CSS</a>
-            <a class="list-group-item" href="#content-bootstrap">Bootstrap</a>
-         </div>
-      </div>
-      <div class="col-8">
-         <div data-spy="scroll" data-target="#myScrollspy" data-offset="10"
-            style="height:600px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
-            <h4 id="content-javascript">Javascript</h4>
-            <p>
-               JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive
-               (e.x. having complex animations, clickable buttons, popup menus, etc.)...
-            </p>
-            <h4 id="content-css">CSS</h4>
-            <p>
-               CSS is the language for describing the presentation of Web pages, including colors,
-               layout, and fonts. It allows one to adapt the presentation to different types of devices,
-               such as large screens, small screens, or printers...
-            </p>
-            <h4 id="content-bootstrap">Bootstrap</h4>
-            <p>
-               CSS is the language for describing the presentation of Web pages, including colors,
-               layout, and fonts. It allows one to adapt the presentation to different types of devices,
-               such as large screens, small screens, or printers. CSS is independent of HTML
-               and can be used with any XML-based markup language...
-            </p>
-         </div>
       </div>
     </div>
-   </div>
-<div class ="col">
-   <img src="CPU.jpg">
+
+
+    <br>
+    <br>
+    <center><a class="btn btn-primary btn-xlarge font-weight-bold" href="CPU Fan.html">Next</a></center>
+    <br>
+    <br>
   </div>
-
-</div>
-    </div>
-   
-
-
-
-    <div class="container-fluid center ">
-        <h2 class = " p-3 text-danger font-weight-bold "> </p></h2>
-    </div>
-
-
-        <center><a class="btn btn-primary btn-lg font-weight-bold" href="Prices.html">Next</a></center>
-   
-      </div>
 </body>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-  
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 </html>

@@ -8,38 +8,183 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Motherboard!</title>
     <style>
-        .Main{
-          text-align: center;
-          padding-top: 70px;
-          padding-bottom: 70px;
-        }
-        .center{
-            text-align: center;
-        }
-        
-          .img-fluid {
-            position: relative;
-            float: left;
-            width: 400px;
-            height: 300px;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-      
-          }
+       .Main {
+      text-align: center;
+      padding-top: 90px;
+    padding-bottom: 43px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    div.content {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      zoom: 70%;
+      -moz-transform: scale(3);
+      -moz-transform-origin: 0 0
+    }
+
+    .img-fluid {
+      position: relative;
+      float: right;
+      width: 900px;
+      height: 600px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .navbar.navbar .navbar-nav>a:hover {
+      color: grey;
+    }
+
+    .navbar.navbar .navbar-nav>a {
+      color: white;
+    }
+
+    .bg-custom {
+      background-color: rgb(87, 87, 87);
+    }
+
+    .scrollmenu {
+
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .scrollmenu a {
+      display: inline-block;
+      text-align: center;
+      padding: 6px;
+      text-decoration: none;
+    }
+
+    .btn-xlarge {
+      padding: 10px 40px;
+      font-size: 20px; 
+      line-height: normal;
+      -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+              border-radius: 8px;
+  }
         </style>
   </head>
   <body>
+    <div class="content">
+      <nav class="  navbar navbar-expand navbar-dark bg-custom flex-column fixed-top flex-md-row bd-navbar ">
+          <div class="container-fluid justify-content-center">
+            <div class="  scrollmenu navbar-nav ">
+    
+              <a class=" nav-item nav-link " href="index.html">Home </a>
+    
+    
+              <a class="nav-item nav-link" href="CPU Install.html">CPU</a>
+              <a class="nav-item nav-link" href="CPU Fan.html">CPU Fan</a>
+              <a class="nav-item nav-link" href="Ram Install.html">RAM</a>
+    
+              <a class="nav-item nav-link" href="MB Install.html">Motherboard</a>
+    
+    
+              <a class="nav-item nav-link" href="SSD Install.html">Storage</a>
+    
+    
+              <a class="nav-item nav-link" href="PS Install.html">Power Supply</a>
+              <a class="nav-item nav-link" href="GPU Install.html">GPU</a>
+    
+    
+              <a class="nav-item nav-link" href="Cables Install.html">Cables</a>
+    
+    
+              <a class="nav-item nav-link" href="Finishing up!.html">Finishing up</a>
+    
+    
+            </div>
+          </div>
+        </nav>
     <div class ="container-fluid Main bg-dark">
-        <h1 class = "text-white font-weight-bold"> Part 2: <br> Motherboard Installation</h3>
+        <h1 class = "p-3 text-white font-weight-bold"> Part 5: <br> Motherboard Installation</h3>
     </div>
 
-    <div class = "container-fluid center ">
-        <h3 class = "p-5 text-black"> Hey man</h3>
+    <div class = "container-fluid p-4 center ">
+        <h3 class = "text-black"> With the CPU, the cooler, and RAM modules installed, the motherboard is ready to be installed!
+        </h3>
+        <h4 class ="text-muted">First, we need to install the I/O shield, 
+          a long piece of metal that has cutouts for the all the rear ports and connections.</h4>
     </div>
 
+    <div class ="container-fluid center border-top border-bottom border-dark">
+      <h5 class="text-danger p-3 mb-1">Depending on if you have a ATX or mini ATX build, your motherboard installation and fit might be a bit different. </h5>
+    </div>
+    
+    <div class="container-fluid mt-4">
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                <div class="list-group" id="list-tab" role="tablist">
+                  
+                  <a class="mb-3 list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#list-home" role="tab" aria-controls="home">
+                    <h3 class="center">I/O Shield</h3>
+                  </a>
+                  
+                  
+                  
+                  <a class="list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                    href="#list-profile" role="tab" aria-controls="profile">
+                    <h3 class=" center">Motherboard</h3>
+                  </a>
+  
+                  
+                </div>
+              </div>
+              <div class="col">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <h4 class=""> <li>At the back, or the top of your PC case, you’ll see a rectangular cut-out. This is for the motherboard’s I/O panel — the portion containing the USB, video, and Ethernet connections.</li> 
+                        <br><li>Your motherboard will be packaged with an I/O shield that fits into this rectangular cut-out.</li>
+                        <br> 
+                        <li>Install it from the inside of the case facing outwards. It should snap onto place fairly easily.</li>
+                         </h4>
+                  </div>
+                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <h4 class=""><li>If you install that shield, and then align your motherboard’s I/O panel with it, 
+                        you’ll find the screw holes in the motherboard align with the stand-offs in your case.</li>
+                      <br><li>Tighten the screws, but do not overtighten them — proceed in a star pattern, tighten each screw a little bit at a time, just enough to secure the board in place.</li>
+                      <br><li>Check the sides of the motherboard by lightly pulling to make sure every inch has been secured. It shouldnt be wiggling at this point.</li>
+                      </h4>
+                  </div>
+                  
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            <br>
+          </div>
+        <div class="col">
+          <img src="MB in case.jpg" class="img-fluid rounded">
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <center><a class="btn btn-primary btn-xlarge font-weight-bold" href="PS Install.html">Next</a></center>
+    <br>
+    <br>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

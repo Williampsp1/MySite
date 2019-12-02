@@ -1,49 +1,288 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-    <style>
-        .Main{
-          text-align: center;
-          padding-top: 70px;
-          padding-bottom: 70px;
-        }
-        .center{
-            text-align: center;
-        }
-        
-          .img-fluid {
-            position: relative;
-            float: left;
-            width: 400px;
-            height: 300px;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Cables!</title>
+  <style>
+    .Main {
+      text-align: center;
+      padding-top: 90px;
+      padding-bottom: 43px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    div.content {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      zoom: 70%;
+      -moz-transform: scale(3);
+      -moz-transform-origin: 0 0
+    }
+
+    .img-fluid {
+      position: relative;
+      float: right;
+      width: 800px;
+      height: 500px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    .navbar.navbar .navbar-nav>a:hover {
+      color: grey;
+    }
+
+    .navbar.navbar .navbar-nav>a {
+      color: white;
+    }
+
+    .bg-custom {
+      background-color: rgb(87, 87, 87);
+    }
+
+    .scrollmenu {
+
+      overflow: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .scrollmenu a {
+      display: inline-block;
+      text-align: center;
+      padding: 6px;
+      text-decoration: none;
+    }
+
+    .btn-xlarge {
+      padding: 10px 40px;
+      font-size: 20px;
+      line-height: normal;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <nav class="  navbar navbar-expand navbar-dark bg-custom flex-column fixed-top flex-md-row bd-navbar ">
+      <div class="container-fluid justify-content-center">
+        <div class="  scrollmenu navbar-nav ">
+
+          <a class=" nav-item nav-link " href="index.html">Home </a>
+
+
+          <a class="nav-item nav-link" href="CPU Install.html">CPU</a>
+          <a class="nav-item nav-link" href="CPU Fan.html">CPU Fan</a>
+          <a class="nav-item nav-link" href="Ram Install.html">RAM</a>
+
+          <a class="nav-item nav-link" href="MB Install.html">Motherboard</a>
+
+
+          <a class="nav-item nav-link" href="SSD Install.html">Storage</a>
+
+
+          <a class="nav-item nav-link" href="PS Install.html">Power Supply</a>
+          <a class="nav-item nav-link" href="GPU Install.html">GPU</a>
+
+
+          <a class="nav-item nav-link" href="Cables Install.html">Cables</a>
+
+
+          <a class="nav-item nav-link" href="Finishing up!.html">Finishing up</a>
+
+
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid Main bg-dark">
+      <h1 class="p-3 text-white font-weight-bold"> Part 8: <br> Connecting everything!</h3>
+    </div>
+
+    <div class="container-fluid p-4 center ">
+      <h3 class="text-black"> In order for everything to work properly, all connections must be securely connected
+      </h3>
+      <h4 class="text-muted"> Let's go through every component in the system</h4>
+    </div>
+
+    <div class="container-fluid center border-top  border-dark">
+      <h5 class="text-danger p-3 mb-1">During this process, cable manage and keep it as clutter free as possible by using the vents in the case and zip ties.</h5>
+    </div>
+    <div class="container-fluid center border-top border-bottom border-dark">
+        <h5 class="text-danger p-3 mb-1">Highly recomended to look at your motherboards manual to locate and connect all cables. Refer to this if you are ever lost, especially for the I/O cables.</h5>
+      </div>
+  
+
+    <div class="container-fluid mt-4">
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="list-group" id="list-tab" role="tablist">
+
+                <a class="mb-3 list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                  href="#list-home" role="tab" aria-controls="home">
+                  <h3 class="center">Motherboard</h3>
+                </a>
+
+
+                <a class="mb-3 list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile" role="tab" aria-controls="profile">
+                  <h3 class=" center">CPU</h3>
+                </a>
+
+                <a class="mb-3 list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile-2" role="tab" aria-controls="profile">
+                  <h3 class=" center">Storage</h3>
+                </a>
+
+                <a class="mb-3 list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile-3" role="tab" aria-controls="profile">
+                  <h3 class=" center">Front panel I/O</h3>
+                </a>
+
+                <a class="list-group-item  list-group-item-action" id="list-profile-list" data-toggle="list"
+                  href="#list-profile-4" role="tab" aria-controls="profile">
+                  <h3 class=" center">GPU</h3>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <h4 class="">
+                    <li>Find the 24-pin cable, slide that through any cable routing recesses on the chassis and plug it 
+                      into the corresponding 24-pin ATX power port on the motherboard. </li>
+                      <br>
+                    <li> Most PSUs have one wide cable that’s obviously intended for this slot, with no other connections on it. 
+                    </li>
+                    <br>
+                      <li>It should plug into your board somewhere near the PCIe slots, but location will vary.
+                    </li>
+                    
+                    
+                  </h4>
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <h4 class="">
+                    
+                    <li>Identify your 8-pin EPS cable, and slide it up the back of the chassis and plug it into the 8 pin 
+                      power slot at the top of the motherboard. </li>
+                    <br>
+                    <li>Make sure your CPU cooler is properly connected into a dedicated AIO cooler or CPU fan slot on your motherboard.</li>
+                    
+                    
+
+                  </h4>
+                </div>
+                <div class="tab-pane fade" id="list-profile-2" role="tabpanel" aria-labelledby="list-profile-list">
+                    <h4 class="">
+                      
+                      <li>You will want to use the SATA connectors.  These are 15-pin flat connectors with a dip on one side to prevent plugging them in the wrong way.</li>
+                      <br>  
+                      
+                      <li> Route these from the PSU to the drive bays and mounts.</li>
+                      <br>
+                      <li>Next, we need to connect the storage drives to the motherboard, using SATA data cables. 
+                        These are the L-shaped cables that carry data instead. </li>
+                        <br>
+                        <li>The motherboard usually has SATA ports located to the lower-left hand-side. 
+                         Much like the power cables, route these through cut-outs and to the storage devices.</li>
+                      
+                      
+  
+                    </h4>
+                  </div>
+
+
+                  <div class="tab-pane fade" id="list-profile-3" role="tabpanel" aria-labelledby="list-profile-list">
+                      <h4 class="">
+                        
+                        
+                        <li>Connecting the front panel I/O, which includes the power switch, 
+                          reset switch, HDD activity LED, and power LED can be intimidating but not as hard as it seems. </li>
+                        <br>
+                        <li>For the I/O panel these pins stand up from the motherboard, which requires a careful approach when plugging in the small connectors. 
+                          The motherboard manual should provide information as to the layout of these pins and what they correspond to.</li>
+                        <br>
+                        <li>It’s important to note that any LED lights (HDD and Power), need to be oriented correctly, 
+                          with the + and - cables installed into the + and - pins on the board.</li>
+                          <br>
+                          <li>It’s also a good time to plug in your USB 3.0 header, USB 2.0 header, and audio passthrough. </li>
+                          <br>
+                          <li>Audio is located on the bottom left of most motherboards. 
+                            It will be labelled, and the pin outs will be different to the USB 2.0 headers. </li>
+                            <br>
+                            <li>
+                            Install your USB 3.0 cables (blue-colored ) into any available slots on the board, making sure to lineup the pins with the holes in the USB 3.0 cables.</li>
+                        
+    
+                      </h4>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile-4" role="tabpanel" aria-labelledby="list-profile-list">
+                        <h4 class="">
+                          
+                          <li>Finally, high-powered graphics cards need their own power connection, usually in the form of a black rectangular connector with six or eight pins.</li>
+                            <br>
+                           <li>These plugs are colored and easy to spot, and only fit in the interior end of the card in one orientation.</li>
+                             
+                          
+                          
+                          
       
-          }
-        </style>
-  </head>
-  <body>
-    <div class ="container-fluid Main bg-dark">
-        <h1 class = "text-white font-weight-bold"> Part 2: <br> Connecting Cables </h3>
-    </div>
+                        </h4>
+                      </div>
+              </div>
 
-    <div class = "container-fluid center ">
-        <h3 class = "p-5 text-black"> Hey man</h3>
-    </div>
+            </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+          </div>
+          <br>
+        </div>
+        <div class="col ">
+          <img src="O install.jpg" class="mb-1 img-fluid rounded">
+       
+            <img src="cables install.jpg" class="img-fluid rounded">
+          </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <center><a class="btn btn-primary btn-xlarge font-weight-bold" href="Cables Install.html">Next</a></center>
+    <br>
+    <br>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
