@@ -25,7 +25,7 @@ public final class App {
    */
 
   private static String CPU = "https://www.amazon.com/gp/product/B07B41WS48/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
-  private static String GPU = "https://www.amazon.com/gp/product/B077VX31FZ/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
+  private static String GPU = "https://www.amazon.com/gp/product/B077VX31FZ/ref=ox_sc_act_title_1?smid=A1SD3U9M25WHJW&psc=1";
   private static String RAM = "https://www.amazon.com/gp/product/B06XJ5LT72/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
   private static String MB = " https://www.amazon.com/gp/product/B07GRNSWNR/ref=ox_sc_act_title_6?smid=ATVPDKIKX0DER&psc=1";
   private static String ST = "https://www.amazon.com/gp/product/B073SBZ8YH/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
@@ -35,18 +35,18 @@ public final class App {
   private static String ICPUF = "https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
   private static String IGPU = "https://www.amazon.com/gp/product/B07MC23VS4/ref=ox_sc_act_title_5?smid=ATVPDKIKX0DER&psc=1";
   private static String IRAM = "https://www.amazon.com/gp/product/B0134EW7G8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
-  private static String IMB = "https://www.amazon.com/gp/product/B07CBKQ75V/ref=ox_sc_act_title_4?smid=ATVPDKIKX0DER&psc=1";
+  private static String IMB = "https://www.amazon.com/gp/product/B07CBKQ75V/ref=ox_sc_act_title_1?smid=A1FJ9SEK1UVDTX&psc=1";
   private static String IST = "https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
   private static String IPS = "https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
-  private static String ICASE = "https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
-  private static String ACPU = "https://www.amazon.com/gp/product/B07HHN6KBZ/ref=ox_sc_act_title_1?smid=A2Y5U0XPH5G1GE&psc=1";
+  private static String ICASE = "https://www.amazon.com/dp/B01N9JPUYW/ref=twister_B071NM2P9W?_encoding=UTF8&psc=1";
+  private static String ACPU = "https://www.amazon.com/gp/product/B07HHN6KBZ/ref=ox_sc_act_title_1?smid=A17MC6HOH9AVE6&psc=1";
   private static String ACPUF = "https://www.amazon.com/gp/product/B079NXZQBC/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
   private static String AGPU = "https://www.amazon.com/gp/product/B07GG9L5X1/ref=ox_sc_act_title_8?smid=ATVPDKIKX0DER&psc=1";
   private static String ARAM = "https://www.amazon.com/gp/product/B01CYILUB8/ref=ox_sc_act_title_7?smid=ATVPDKIKX0DER&psc=1";
   private static String AMB = "https://www.amazon.com/gp/product/B07J6Z9KJ2/ref=ox_sc_act_title_3?smid=AVCN3MVCVULPH&psc=1";
   private static String AST = "https://www.amazon.com/gp/product/B073SBQMCX/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1";
   private static String APS = "https://www.amazon.com/gp/product/B01B72W1VA/ref=ox_sc_act_title_2?smid=ATVPDKIKX0DER&psc=1";
-  private static String ACASE = "https://www.amazon.com/gp/product/B01MY0C9D6/ref=ox_sc_act_title_3?smid=ATVPDKIKX0DER&psc=1";
+  private static String ACASE = "https://www.amazon.com/dp/B01N9JPUYW/ref=twister_B071NM2P9W?_encoding=UTF8&psc=1";
   private static Document document1;
   private static Document document2;
   private static Document document3;
