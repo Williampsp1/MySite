@@ -66,7 +66,7 @@ public final class App {
       config.addStaticFiles("./HTML files");
       config.addStaticFiles("./Images");
 
-    }).start(80);
+    }).start(8080);
 
     for (int i = 0; i < BParts.length; i++) {
       document1 = Jsoup.connect(BParts[i]).userAgent(
